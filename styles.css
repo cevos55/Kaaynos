@@ -1,0 +1,968 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .hero {
+            position: relative;
+            background: url('34117.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 213px 100px;
+            
+ 
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Fond sombre avec opacité */
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* background: rgba(0, 0, 0, 0.8); */
+            padding: 15px 50px; /* Ajout de padding pour éviter que les éléments touchent les bords */
+            color: white;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .cta-button {
+            background: #007bff00;
+            color: white;
+            border: 2px solid;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+        
+        }
+        
+        .cta-button:hover {
+            background: #0056b3;
+        }
+
+        .hero-button{
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+        .hero-button:hover {
+            background: #0056b3;
+        }
+
+
+
+        
+        .services {
+            /* background: url('2.png') no-repeat center center/cover;
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+            margin: 20px 0; */
+
+
+            position: relative;
+            background: url('2.png') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+            /* text-align: center; */
+            padding:122px 100px;
+        }
+
+        .why-us{
+            text-align: center;
+            padding: 93px 20px;
+            background: #113366;
+            margin: 20px 0;
+            color: white;
+            margin: 0;
+        }
+        .team{
+            /* text-align: center; */
+            padding: 50px 20px;
+            /* background: #0056b3; */
+            margin: 20px 0;
+            color: rgb(0, 0, 0);
+            margin: 0;   
+            /* position: relative; */
+            padding:122px 100px;
+        }
+
+        h1{
+            font-size: 68px;
+        }
+        .button-logo {
+            width: 20px; /* Ajuste la taille selon ton logo */
+            height: 20px;
+            margin-left: 10px; /* Espacement entre le texte et le logo */
+        }
+        h2{
+            font-size: 50px;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        .texte1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .more-button{
+         
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+        
+        .nosservices {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            /* max-width: 1200px; */
+            margin: auto;
+            padding-top: 30px;
+            
+        }
+        
+        /* Chaque service est divisé en deux : texte à gauche, image à droite */
+        .servie {
+            background: #e3e3e3;
+            border-radius: 30px;
+            display: flex;
+            width: 100%;
+            height: 354px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Contenu (Texte, icône et lien) */
+        .content {
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        
+        /* Cercle avec icône */
+        .icon-container {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 50px;
+            height: 50px;
+            background-color: #113366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .icon-img {
+            width: 30px;
+            height: auto;
+        }
+        
+        /* Image à droite (50% de la div, hauteur complète) */
+        .image-container {
+            /* width: 50%;
+            height: 100%; */
+            width: 47%;
+            height: 90%;
+            margin: 17px 18px;
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+        
+        /* Lien stylé */
+        .content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* La dernière div occupe toute la largeur */
+        .servie:last-child {
+            grid-column: span 2;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent après scroll */
+        }
+
+/* 
+
+        .service-grid, .reasons-grid, .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-item, .reason-item, .team-member {
+            background: #e3e3e3;
+            padding: 20px;
+            border-radius: 8px;
+        } */
+        .footer {
+            background: #000;
+            color: white;
+            padding: 30px 50px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .footer-left {
+            max-width: 300px;
+        }
+        
+        .footer-logo {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1BA19D;
+            margin-bottom: 10px;
+        }
+        
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-services {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .footer-services ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-services li {
+            margin-bottom: 5px;
+        }
+        
+        .footer-services a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+        }
+        
+        .footer-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .social-icons img {
+            width: 20px;
+        }
+        
+
+.why-work-with-us{
+
+                /* text-align: center; */
+                padding: 50px 20px;
+                /* background: #0056b3; */
+                margin: 20px 0;
+                color: rgb(0, 0, 0);
+                margin: 0;   
+                /* position: relative; */
+                padding:122px 100px;
+
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding-top: 27px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajoute un espace entre l'icône et le texte */
+}
+
+/* ✅ Ajout du carré autour de l'icône */
+.feature-icon-box {
+    background: #cbccce;
+    padding: 54px;
+    border-radius: 10px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ✅ L'icône est bien centrée */
+.feature-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    /* background: white; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon-wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ✅ Texte */
+.feature-text {
+    flex: 1; /* Permet au texte d'occuper tout l'espace disponible */
+}
+
+.feature-badge {
+    background: #1BA19D;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.feature-text h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.feature-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.leaders-section {
+    background: #113366; /* Couleur de fond */
+    color: white;
+    padding: 60px 10%;
+}
+
+.leaders-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Texte à gauche */
+.leaders-text {
+    max-width: 40%;
+}
+
+.leaders-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #00d1b2; /* Couleur du texte "Leaders" */
+}
+
+.leaders-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Grid des leaders (Profils à droite) */
+.leaders-grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* Carte leader */
+.leader-card {
+    background: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    width: 298px;
+}
+
+.leader-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Informations du leader */
+.leader-info {
+    padding: 15px;
+}
+
+.leader-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.leader-role {
+    color: #bbb;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.leader-description {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Contact */
+.contact-section {
+    background: url('2.png') no-repeat center center/cover;
+    padding: 60px 10%;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Texte à gauche */
+.contact-text {
+    max-width: 45%;
+}
+
+.contact-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+}
+
+.highlight {
+    color: #00bfa5;
+}
+
+.contact-text p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Formulaire à droite */
+.contact-form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #00bfa5;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h3 {
+    font-size: 20px;
+    color: #00bfa5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Champs du formulaire */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group small {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    text-align: right;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: 18px;
+    height: 18px;
+    accent-color: #00bfa5;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #333;
+}
+
+.checkbox-group a {
+    color: #00bfa5;
+    text-decoration: none;
+}
+
+/* Bouton d'envoi */
+.submit-btn {
+    background: #00bfa5;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #009a87;
+}
+
+
+
+
+
+
+
+
+
+/* Ajoutez ces media queries à la fin de votre fichier CSS */
+
+/* Pour les écrans jusqu'à 1200px */
+@media (max-width: 1200px) {
+    .hero {
+        padding: 150px 50px;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    .texte1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nosservices {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pour les tablettes (768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 30px;
+    }
+    
+    .navbar {
+        padding: 15px 30px;
+    }
+    
+    .nav-links {
+        display: none; /* Cacher la navigation sur mobile */
+    }
+    
+    .cta-button {
+        display: none; /* Cacher le bouton CTA sur mobile */
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    .services, .team, .why-work-with-us {
+        padding: 60px 30px;
+    }
+    
+    .servie {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .content, .image-container {
+        width: 100%;
+    }
+    
+    .image-container {
+        height: 300px;
+        margin: 0;
+        border-radius: 0 0 18px 18px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .leaders-container {
+        flex-direction: column;
+    }
+    
+    .leaders-text {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-text, .contact-form-container {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .contact-form-container {
+        margin-top: 40px;
+    }
+}
+
+/* Pour les mobiles (480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .services, .team, .why-work-with-us {
+        padding: 40px 20px;
+    }
+    
+    .texte1 h2 {
+        font-size: 28px;
+    }
+    
+    .service-img {
+        border-radius: 12px;
+    }
+    
+    .leaders-grid {
+        flex-direction: column;
+    }
+    
+    .leader-card {
+        width: 100%;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-services {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+/* Ajout des media queries pour l'adaptation mobile et optimisation */
+
+/* Défilement fluide pour les ancres */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style du menu hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding: 150px 50px;
+    }
+    
+    .hero h1 {
+        font-size: 48px;
+    }
+    
+    .texte1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .nosservices {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 100px 30px;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .cta-button {
+        margin-top: 10px;
+    }
+    
+    .nosservices {
+        grid-template-columns: 1fr;
+    }
+    
+    .servie {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .content, .image-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .services, .team, .why-us, .why-work-with-us {
+        padding: 80px 20px;
+    }
+    
+    .texte1 {
+        text-align: center;
+    }
+    
+    .more-button {
+        width: 100%;
+    }
+    
+    .nosservices {
+        grid-template-columns: 1fr;
+    }
+    
+    .servie {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .content, .image-container {
+        width: 100%;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
