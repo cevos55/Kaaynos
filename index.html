@@ -6,6 +6,7 @@
     <title>Kaaynos - Solutions Numériques Innovantes</title>
     <link rel="stylesheet" href="styles.css">
     
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 
     <script>
@@ -17,19 +18,54 @@
                 header.classList.remove("scrolled");
             }
         });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+    });
+});
+
     </script>
+    
+    <style>
+        .social-icons img {
+            width: 24px; /* Adjust the size as needed */
+            height: 24px;
+            margin: 0 5px;
+        }
+        .contact-icons img {
+            width: 24px; /* Adjust the size as needed */
+            height: 24px;
+            margin: 0 5px;
+        }
+    </style>
     
 </head>
 <body>
     <header class="hero">
         <nav class="navbar">
-            <div class="logo"><img style="width: 88px;" src="logo.png" alt="Kaaynos Logo" class="footer-logo"></div>
+            <div class="logo"><img style="width: 88px;" src="logo.png" alt="Kaaynos Logo"></div>
+            
+            <!-- Menu Toggle pour mobile -->
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        
+            <!-- Liens de navigation -->
             <ul class="nav-links">
-                <li><a href="#services">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#profil">Portfolio</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
+            
+        
             <button class="cta-button">
                 Get Started <img src="3.png" alt="Kaaynos Logo" class="button-logo"> 
             </button>
@@ -37,12 +73,12 @@
         </nav>
         <div class="hero-content">
             <h1>Transforming Businesses with Innovative Digital Solutions</h1>
-            <p>From Web Development to AI, Cybersecurity, and Cloud Services - we Deliver Tailored solutions to Empower Your Success</p>
+            <p>From Web Development to AI, Cybersecurity, and Cloud Services - we deliver tailored solutions to empower your success.</p>
             <button class="hero-button" style="background-color: #1BA19D;">Get Started<img src="3.png" alt="Kaaynos Logo" class="button-logo"> </button>
         </div>
     </header>
 
-    <section class="services" id="services">
+    <section class="services" id="about">
         <div class="texte1">
          <h2>Explore Kaaynos'<span style="color:#1BA19D ;">Wide Range of<br>
             Digital </span>  Services Tailored for Your<br>
@@ -50,16 +86,16 @@
             </h2>
           <div>  <button class="more-button" style="background-color: #1BA19D;">Learn More<img src="3.png" alt="Kaaynos Logo" class="button-logo"> </button></div>
         </div>
-        <p>We offer web development, Al, cybersecurity, cloud, and network solutions to help your business thrive with <br>simole and etrective technoloav.</p>
+        <p>We are passionate about helping businesses grow and succeed in the digital age. We take pride in our work and strive to exceed your expectations every time.</p>
     </section>
 
     <section class="why-us" >
         <h3>We are passionate about helping businesses grow and succeed<br> in the digital age. We take pride in our work and strive to exceed <br> your expectations every time.</h3>
     </section>
 
-    <section class="team">
+    <section class="team" id="services">
         <div class="texte1">
-            <h2>Our<span style="color:#1BA19D ;">Technology Services<br>
+            <h2>Our<span style="color:#1BA19D ;"> Technology Services<br>
                </span>  at Kaaynos
                </h2>
 
@@ -80,35 +116,35 @@
             <div class="servie">
                 <div class="content">
                     <div class="icon-container">
-                        <img src="5.png" alt="Web Icon" class="icon-img">
+                        <img src="world-wide-web.png" alt="Web Icon" class="icon-img" style="filter: brightness(0) invert(1);">
                     </div>
                     <h3>Web and App Development</h3>
                     <p>We design and build custom websites and mobile applications for your brand and users.</p>
                     <a href="#">Start with us →</a>
                 </div>
                 <div class="image-container">
-                    <img src="1.jpg" alt="Web Development" class="service-img">
+                    <img src="web_app.jpg" alt="Web Development" class="service-img">
                 </div>
             </div>
         
             <div class="servie">
                 <div class="content">
                     <div class="icon-container">
-                        <img src="5.png" alt="AI Icon" class="icon-img">
+                        <img src="predictive-chart.png" alt="AI Icon"  style="filter: brightness(0) invert(1);" class="icon-img" >
                     </div>
                     <h3>Data and AI Solutions</h3>
                     <p>We offer AI-driven analytics and machine learning solutions to process and understand data.</p>
                     <a href="#">Start with us →</a>
                 </div>
                 <div class="image-container">
-                    <img src="10.jpg" alt="AI Solutions" class="service-img">
+                    <img src="data.jpg" alt="AI Solutions" class="service-img">
                 </div>
             </div>
         
             <div class="servie">
                 <div class="content">
                     <div class="icon-container">
-                        <img src="5.png" alt="Security Icon" class="icon-img">
+                        <img src="security.png" alt="Security Icon" style="filter: brightness(0) invert(1);" class="icon-img">
                     </div>
                     <h3>Cybersecurity Services</h3>
                     <p>We provide robust security solutions to protect your network and data from threats.</p>
@@ -122,28 +158,28 @@
             <div class="servie">
                 <div class="content">
                     <div class="icon-container">
-                        <img src="5.png" alt="Cloud Icon" class="icon-img">
+                        <img src="server.png" alt="Cloud Icon" style="filter: brightness(0) invert(1);" class="icon-img">
                     </div>
                     <h3>Cloud Services</h3>
                     <p>Kaaynos helps businesses transition to the cloud with major platforms like AWS, Google Cloud.</p>
                     <a href="#">Start with us →</a>
                 </div>
                 <div class="image-container">
-                    <img src="12.jpg" alt="Cloud Services" class="service-img">
+                    <img src="cloud.jpg" alt="Cloud Services" class="service-img">
                 </div>
             </div>
         
             <div class="servie">
                 <div class="content">
                     <div class="icon-container">
-                        <img src="5.png" alt="Network Icon" class="icon-img">
+                        <img src="lan.png" alt="Network Icon" style="filter: brightness(0) invert(1);" class="icon-img">
                     </div>
                     <h3>Network and Hardware Solutions</h3>
                     <p>We provide networking and hardware solutions for businesses to ensure efficiency.</p>
                     <a href="#">Start with us →</a>
                 </div>
                 <div class="image-container">
-                    <img src="13.jpg" alt="Network Solutions" class="service-img">
+                    <img src="network.jpg" alt="Network Solutions" class="service-img">
                 </div>
             </div>
         </div>
@@ -152,12 +188,12 @@
     </section>
 
     <div>
-        <img style="width: 100%;" src="6.png" alt="">
+        <img style="width: 100%;" src="6.jpg" alt="">
      </div>
 
 
 
-<section class="why-work-with-us">
+<section class="why-work-with-us" id="profil">
     
         <h2>Why <span style="color:#1BA19D ;">Work With Us?<br>
            </h2>
@@ -174,7 +210,7 @@
         <div class="feature-card">
             <div class="feature-icon-box">
                 <div class="feature-icon-wrapper">
-                    <img src="123.png" alt="Icon">
+                    <img src="efficiency.png" alt="Icon">
                 </div>
             </div>
             <div class="feature-text">
@@ -187,7 +223,7 @@
         <div class="feature-card">
             <div class="feature-icon-box">
                 <div class="feature-icon-wrapper">
-                    <img src="123.png" alt="Icon">
+                    <img src="practical-solutions.png" alt="Icon">
                 </div>
             </div>
             <div class="feature-text">
@@ -200,7 +236,7 @@
         <div class="feature-card">
             <div class="feature-icon-box">
                 <div class="feature-icon-wrapper">
-                    <img src="123.png" alt="Icon">
+                    <img src="skill.png" alt="Icon">
                 </div>
             </div>
             <div class="feature-text">
@@ -213,7 +249,7 @@
         <div class="feature-card">
             <div class="feature-icon-box">
                 <div class="feature-icon-wrapper">
-                    <img src="123.png" alt="Icon">
+                    <img src="person.png" alt="Icon">
                 </div>
             </div>
             <div class="feature-text">
@@ -228,14 +264,15 @@
 </section>
 
 
-<section class="leaders-section">
+<section class="leaders-section" id="contact">
     <div class="leaders-container">
         <!-- Texte à gauche -->
         <div class="leaders-text">
             <h2>Meet Our <span class="highlight">Leaders</span></h2>
             <p>
-                Our diverse and passionate team is at the heart of Kaaynos' mission to transform Africa’s talent into global technology leaders. 
-                With expertise across various fields, we're united by a shared commitment to delivering world-class solutions and advancing sustainable growth. 
+                Our diverse and passionate team is at the heart of Kaaynos' mission to transform Africa’s 
+                talent into global technology leaders. With expertise across various fields, we're united 
+                by a shared commitment to delivering world-class solutions and advancing sustainable growth. 
                 Get to know the minds driving our success.
             </p>
         </div>
@@ -244,24 +281,21 @@
         <div class="leaders-grid">
             <div class="leader-card">
                 <div class="leader-image">
-                    <img src="001.jpg" alt="Arlette NYA">
+                    <img src="111.jpg" alt="Arlette NYA">
                 </div>
                 <div class="leader-info">
                     <h3>Arlette NYA</h3>
                     <p class="leader-role">CEO, Yaoundé</p>
-                    <p class="leader-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
 
             <div class="leader-card">
                 <div class="leader-image">
-                    <img src="01.jpg" alt="Patrick YANKAM">
+                    <img src="101.jpg" alt="Patrick YANKAM">
                 </div>
                 <div class="leader-info">
                     <h3>Patrick YANKAM</h3>
                     <p class="leader-role">Director, Bangangté</p>
-                    <p class="leader-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
             </div>
         </div>
     </div>
@@ -315,6 +349,10 @@
             <div class="footer-left">
                 <img style="width: 88px;" src="logo.png" alt="Kaaynos Logo" class="footer-logo">
                 <p>Harnessing Africa’s Talent, Empowering Growth, Driving Sustainability.</p>
+                <div class="contact-icons">
+                    <a href="mailto:contact@kaaynos.com"><img src="email.png" alt="Email"></a>
+                    <a href="tel:+237678578089"><img src="phone.png" alt="Phone"></a>
+                </div>
             </div>
             <div class="footer-right">
                 <h3 class="footer-title">Services</h3>
@@ -341,15 +379,14 @@
                 <a href="#">Cookie Policy</a>
             </div>
             <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Instagram"></a>
                 <a href="#"><img src="instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
                 <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="logos.png" alt="Twitter"></a>
             </div>
         </div>
     </footer>
-    
-
 
 </body>
 </html>

@@ -697,6 +697,21 @@
     
     .nosservices {
         grid-template-columns: 1fr;
+        display: flow;
+ 
+    }
+    .services, .team, .why-work-with-us {
+        padding: 60px 30px;
+    }
+    
+    .servie {
+        flex-direction: column;
+        height: auto;
+        margin: 20px 0px;
+    }
+    
+    .content, .image-container {
+        width: 100%;
     }
 }
 
@@ -727,7 +742,12 @@
     }
     
     h3 {
-        font-size: 28px;
+        font-size: 24px;
+        margin: 61px 0px;
+        margin-bottom: 0;
+    }
+    p{
+        width: 94%;
     }
     
     .services, .team, .why-work-with-us {
@@ -737,6 +757,7 @@
     .servie {
         flex-direction: column;
         height: auto;
+        margin: 20px 0px;
     }
     
     .content, .image-container {
@@ -750,8 +771,15 @@
     }
     
     .features-grid {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        display: flow;
     }
+    .feature-card {
+        margin: 20px 0px;
+        display: grid
+        ;
+    }
+    
     
     .leaders-container {
         flex-direction: column;
@@ -836,14 +864,6 @@
 
 
 
-
-/* Ajout des media queries pour l'adaptation mobile et optimisation */
-
-/* Défilement fluide pour les ancres */
-html {
-    scroll-behavior: smooth;
-}
-
 /* Style du menu hamburger */
 .menu-toggle {
     display: none;
@@ -856,113 +876,48 @@ html {
     height: 3px;
     background-color: white;
     margin: 5px;
+    transition: 0.3s;
 }
 
-@media screen and (max-width: 1024px) {
-    .hero {
-        padding: 150px 50px;
-    }
-    
-    .hero h1 {
-        font-size: 48px;
-    }
-    
-    .texte1 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .nosservices {
-        grid-template-columns: 1fr;
-    }
-}
-
+/* Style du menu pour mobile */
 @media screen and (max-width: 768px) {
-    .hero {
-        padding: 100px 30px;
-    }
-    
-    .hero h1 {
-        font-size: 36px;
-    }
-    
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
     .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
         display: none;
+        flex-direction: column;
+        background: #0056b3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
-    
-    .menu-toggle {
-        display: flex;
-    }
-    
+
     .nav-links.active {
         display: flex;
     }
-    
-    .cta-button {
-        margin-top: 10px;
-    }
-    
-    .nosservices {
-        grid-template-columns: 1fr;
-    }
-    
-    .servie {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .content, .image-container {
-        width: 100%;
-        padding: 10px;
+
+    .menu-toggle {
+        display: flex;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .hero {
-        padding: 80px 20px;
-    }
-    
-    .hero h1 {
-        font-size: 28px;
-    }
-    
-    .services, .team, .why-us, .why-work-with-us {
-        padding: 80px 20px;
-    }
-    
-    .texte1 {
-        text-align: center;
-    }
-    
-    .more-button {
-        width: 100%;
-    }
-    
-    .nosservices {
-        grid-template-columns: 1fr;
-    }
-    
-    .servie {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    .content, .image-container {
-        width: 100%;
-    }
-    
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+
+/* Appliquer Montserrat aux titres */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Appliquer Open Sans aux paragraphes */
+body, p, a {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Améliorer l'affichage des boutons */
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
